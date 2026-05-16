@@ -11,6 +11,24 @@
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./client": {
+      "types": "./dist/client.d.ts",
+      "import": "./dist/client.js"
+    },
+    "./signing": {
+      "types": "./dist/signing.d.ts",
+      "import": "./dist/signing.js"
+    },
+    "./walletActions": {
+      "types": "./dist/walletActions.d.ts",
+      "import": "./dist/walletActions.js"
+    }
+  },
   "files": [
     "dist",
     "README.md"
