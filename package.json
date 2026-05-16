@@ -1,6 +1,6 @@
 {
   "name": "@0x26xyz/and-chain-sdk",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Thin TypeScript SDK for the & chain JSON-RPC API",
   "license": "MIT",
   "homepage": "https://github.com/0x26xyz/0x26-ts-sdk",
@@ -39,6 +39,7 @@
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",
+    "prepare": "npm run build",
     "test": "npm run build && node --test tests/*.test.mjs"
   },
   "devDependencies": {
